@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="javascript.js">
+  <title>School Website</title>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.ideaboxNews {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #f5f5f5;
+    color: #fff;
+    line-height: 1;
+    font-size: 100%;
+    position: relative;
+}
+
+.simplebar-content-wrapper {
+    direction: inherit;
+    box-sizing: border-box !important;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.simplebar-offset {
+    direction: inherit !important;
+    box-sizing: inherit !important;
+    resize: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+.simplebar-mask {
+    direction: inherit;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+    height: auto !important;
+    z-index: 0;
+}
+.ideaboxNews>ul li>.in-content {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 10px 0 10px 96px;
+    position: relative;
+}
+
+.ideaboxNews>ul li>.in-content>div {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    height: 40px;
+    color: #000000;
+    display: block;
+    margin-top: 0px;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    line-height: 20px;
+    /* opacity: 0.8; */
+}
+
+.ideaboxNews>ul li {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.ideaboxNews>ul li>.in-image {
+    width: 86px;
+    height: 79px;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+    background: #07feb0;
+    overflow: hidden;
+}
+.rem-border {
+    border-left: none;
+}
+
+.tt-b-day {
+    font-size: 28px;
+    padding: 10px 0px 0px;
+    text-align: center;
+    line-height: 25px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255);
+}
+
+.tt-b-day-r, .tt-b-amp {
+    float: none;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.ideaboxNews > ul li > .in-image > span.in-turquoise {
+    background: rgb(255, 139, 23);
+}
+.ideaboxNews > ul li:hover .in-image > span {
+    width: 86px;
+}
+.ideaboxNews > ul li > .in-image > span {
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgb(253, 200, 0);
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.in-easing li, .in-easing .in-image span {
+    transition: all 0.15s linear 0s;
+}
+
+.ideaboxNews>ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    border: 0px solid #f5f5f5;
+}
+
+.ideaboxNews>ul li>.in-content {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 10px 0 10px 96px;
+    position: relative;
+}
+
+.ideaboxNews > ul li > .in-content > div {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.ideaboxNews > ul li > .in-content a {
+    color: rgb(6, 61, 35);
+    text-decoration: none;
+}
+
+.ideaboxNews>ul li>.in-image>span.in-turquoise {
+    background: #FF8B17;
+}
+
+.ideaboxNews>ul li>.in-image>span {
+    position: absolute;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    background: #fdc800;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.ideaboxNews>ul li>.in-image>span>h6 {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0;
+    color: #FFF;
+}
+.in-easing .in-image span h6 {
+    transition: .35s linear;
+    -moz-transition: .35s linear;
+    -webkit-transition: .35s linear;
+}
+user agent stylesheet
+h6 {
+    display: block;
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+ <div data-simplebar="init" style="height: 400px;" class="simplebar-scrollable-y"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
+    <div class="ideaboxNews in-easing" id="idx1">	
+   
+        <ul>
+		        
+			        	<li>
+            	<div class="in-image">
+                	<div class="tt-b-day rem-border ">18</div>
+											<div class="tt-b-day-r">
+											<div class="tt-b-month">Aug</div>
+											<div class="tt-b-date">2023</div>
+										</div>
+                    <span class="in-turquoise"><h6 style="color:#fff;">+ Read more</h6></span>
+                </div>
+                <div class="in-content">
+                	
+                    <div>
+						
+			 <a target="_top" href="#">
+			              PARENTAL CIRCULAR (DPSG/988/2023-24)- REGARDING INTER – HOUSE PRIMARY AND JUNIOR WING SPORTS ACTIVITY             </a>
+														
+                    </div>
+                </div>
+            </li>
+			        	<li>
+            	<div class="in-image">
+                	<div class="tt-b-day rem-border ">17</div>
+											<div class="tt-b-day-r">
+											<div class="tt-b-month">Aug</div>
+											<div class="tt-b-date">2023</div>
+										</div>
+                    <span class="in-turquoise"><h6 style="color:#fff;">+ Read more</h6></span>
+                </div>
+                <div class="in-content">
+                	
+                    <div>
+						
+			 <a target="_top" href="#">
+                          PARENTAL CIRCULAR (DPSG/987/2023-24)- REGARDING THE DPS NATIONAL ATHLETIC MEET BOYS (OPEN) 2023             </a>
+														
+                    </div>
+                </div>
+            </li>
+			        	<li>
+            	<div class="in-image">
+                	<div class="tt-b-day rem-border ">17</div>
+											<div class="tt-b-day-r">
+											<div class="tt-b-month">Aug</div>
+											<div class="tt-b-date">2023</div>
+										</div>
+                    <span class="in-turquoise"><h6 style="color:#fff;">+ Read more</h6></span>
+                </div>
+                <div class="in-content">
+                	
+                    <div>
+						
+			 <a target="_top" href="#">
+                          PARENTAL CIRCULAR (DPSG/986/2023-24)- REGARDING KHELO INDIA INTER-SCHOOL BASKETBALL TOURNAMENT (GIRLS) : 2023-2024             </a>
+														
+                    </div>
+                </div>
+            </li>
+			        
+			        	<li>
+            	<div class="in-image">
+                	<div class="tt-b-day rem-border ">01</div>
+											<div class="tt-b-day-r">
+											<div class="tt-b-month">Aug</div>
+											<div class="tt-b-date">2023</div>
+										</div>
+                    <span class="in-turquoise"><h6 style="color:#fff;">+ Read more</h6></span>
+                </div>
+                <div class="in-content">
+                	
+                    <div>
+						
+			 <a target="_top" href="#">
+                          PARENTAL CIRCULAR (DPSG/980/2023-24)- INTER HOUSE SCIENCE QUIZ COMPETITION (CLASSES: VII TO IX)             </a>
+														
+                    </div>
+                </div>
+            </li>
+			
+			  	<li>
+            	<div class="in-image">
+                	<div class="tt-b-day rem-border ">01</div>
+											<div class="tt-b-day-r">
+											<div class="tt-b-month">Aug</div>
+											<div class="tt-b-date">2023</div>
+										</div>
+                    <span class="in-turquoise"><h6 style="color:#fff;">+ Read more</h6></span>
+                </div>
+                <div class="in-content">
+                	
+                    <div>
+						
+			 <a target="_top" href="#">
+                          PARENTAL CIRCULAR (DPSG/980/2023-24)- INTER HOUSE SCIENCE QUIZ COMPETITION (CLASSES: VII TO IX)             </a>
+														
+                    </div>
+                </div>
+            </li>
+			
+			  	<li>
+            	<div class="in-image">
+                	<div class="tt-b-day rem-border ">01</div>
+											<div class="tt-b-day-r">
+											<div class="tt-b-month">Aug</div>
+											<div class="tt-b-date">2023</div>
+										</div>
+                    <span class="in-turquoise"><h6 style="color:#fff;">+ Read more</h6></span>
+                </div>
+                <div class="in-content">
+                	
+                    <div>
+						
+			 <a target="_top" href="#">
+                          PARENTAL CIRCULAR (DPSG/980/2023-24)- INTER HOUSE SCIENCE QUIZ COMPETITION (CLASSES: VII TO IX)             </a>
+														
+                    </div>
+                </div>
+            </li>
+			        	
+						  
+			
+			        </ul>
+     </div>
+    </div></div></div></div><div class="simplebar-placeholder" style="width: 458px; height: 4560px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 35px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+</div>
+
+
+</body>
+
+</html>
